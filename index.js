@@ -2,7 +2,7 @@ const axios = require('axios');
 
 exports.handler = async (event) => {
   const { keyword } = event.queryStringParameters;
-  const apiEndpoint = 'https://wgpof7ajyf.execute-api.us-east-2.amazonaws.com/test';
+  const apiEndpoint = 'https://wgpof7ajyf.execute-api.us-east-2.amazonaws.com/say';
 
   try {
     const response = await axios.get(`${apiEndpoint}?keyword=${keyword}`);
